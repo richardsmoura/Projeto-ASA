@@ -16,9 +16,31 @@ Após realizar as instalações e dependências, podemos prosseguir para levanta
 Para Clonar os arquivos do GitHub:
 ```bash
 git clone https://github.com/richardsmoura/Projeto-ASA.git
-
+```
 Para build e subir os containers:
-docker compose up --build
-
+```bash
+docke-compose up --build
+```
 Para kill containers:
-docker compose down
+```bash
+docker-compose down
+```
+
+OBS: Importantante criar/modificar algumas coisas, como por exemplo o endereço IP dos arquivos DNS, logo que os nomes serão de extrema importância, caso algo acontece de errado verifique os volumes ou o caminho de diretórios que está apontando o Dockerfile do determinado container.
+
+
+# Testando Serviços:
+
+1 - Para utilizar os serviços confirme que que o DNS está funcionando. Caso tenha resposta prossiga para o passo 2.
+2 - Ao confirmar os endereõs de DNS, pode acessar o Web Content 01 utilizando o endereço: ifrn.asa.br (ou endereço que chegou a escolher). Para o Web Content 02: www.diaren.ifrn.asa.br (ou o que você escolheu).
+3 - Para entrar no webmail, basta acessar: mail.ifrn.asa.br/rainloop/ - Caso seja a primeira vez configurando, terá que acessar: mail.ifrn.asa.br/rainloop/?admin - Poderá ter mais informações sobre configurações do Webmail em: https://www.rainloop.net/docs/
+4 - Para utilizar o SSH, baixar realizar o acesso via terminal ou putty apontando para o ip e a porta 22. O logon dos users, pode ser acessado/modificado dentro do Dockerfile.ssh.
+
+Outras documentações que poderão te ajduar, caso você esteja começando a estudar sobre os serviços:
+
+DNS BIND: https://bind9.readthedocs.io/en/v9.18.21/
+NGINX (HTTP): https://nginx.org/en/docs/
+POSTFIX: https://www.postfix.org/documentation.html
+DOVECOTE: https://www.dovecot.org/
+
+Espero que tenha gostado do projeto ou te ajudado em algum que esteja desenvolvendo :).
