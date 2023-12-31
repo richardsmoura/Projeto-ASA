@@ -1,0 +1,15 @@
+FROM debian:buster
+
+WORKDIR /dir
+
+RUN apt-get update 
+RUN apt-get upgrade -y
+RUN apt install apache2 apache2-utils libapache2-mod-php php php-cli php-curl php-xml php-imap nano -y
+
+RUN mkdir /var/www/html/rainloop
+
+COPY script.sh .
+
+RUN chmod 755 ./script.sh
+
+CMD ["./script.sh"]
