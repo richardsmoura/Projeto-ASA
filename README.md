@@ -43,7 +43,7 @@ Outras documentações que poderão te ajudar:
 
 DNS BIND: https://bind9.readthedocs.io/en/v9.18.21/
 
-NGINX (HTTP): https://nginx.org/en/docs/
+NGINX HTTP: https://nginx.org/en/docs/
 
 POSTFIX: https://www.postfix.org/documentation.html
 
