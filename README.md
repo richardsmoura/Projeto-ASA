@@ -14,6 +14,7 @@ Para a realização e testagem do Projeto é necessário ter o Docker e o Docker
 Após realizar as instalações e dependências, podemos prosseguir para levantar a infraestrutura.
 
 Para Clonar os arquivos do GitHub:
+```bash
 git clone https://github.com/richardsmoura/Projeto-ASA.git
 
 Para build e subir os containers:
