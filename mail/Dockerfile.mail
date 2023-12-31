@@ -1,0 +1,26 @@
+FROM ubuntu:20.04
+
+#Baixando pacotes
+RUN apt update -y
+RUN apt upgrade -y
+RUN apt install postfix dovecot-core dovecot-imapd telnet -y
+
+#Copiando arquivos postifx
+COPY ./postfix/main.cf /etc/postfix/main.cf
+
+#Copiando arquivos Dovecot
+COPY ./dovecot/10-auth.conf /etc/dovecot/conf.d/10-auth.conf
+COPY ./dovecot/10-mail.conf /etc/dovecot/conf.d/10-mail.conf
+COPY ./dovecot/10-master.conf /etc/dovecot/conf.d/10-master.conf
+COPY ./dovecot/dovecot.conf /etc/dovecot/dovecot.conf
+
+# Criação de users/senha
+RUN useradd -m bob
+RUN echo "bob:bob0123"|chpasswd
+RUN useradd -m gabriel
+RUN echo "gabriel:gabriel0123"|chpasswd
+
+# Expose Ports
+#EXPOSE 25 110 143 993 995
+
+CMD ["/bin/bash", "-c", "service dovecot start; postfix start-fg"] 
