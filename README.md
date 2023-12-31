@@ -42,8 +42,11 @@ OBS: Importantante criar/modificar algumas coisas, como por exemplo o endereço 
 Outras documentações que poderão te ajduar, caso você esteja começando a estudar sobre os serviços:
 
 DNS BIND: https://bind9.readthedocs.io/en/v9.18.21/
+
 NGINX (HTTP): https://nginx.org/en/docs/
+
 POSTFIX: https://www.postfix.org/documentation.html
+
 DOVECOTE: https://www.dovecot.org/
 
 Espero que tenha gostado do projeto ou te ajudado em algum que esteja desenvolvendo.
