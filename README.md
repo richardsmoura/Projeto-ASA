@@ -7,11 +7,9 @@ O projeto ASA consiste em um projeto realizado para a disciplina de Administraç
 | 1      | - Configuração de Proxy Reverso (Nginx) com um virtualhost para o Web Content                                     |
 |        | - Criação da primeira zona direta "ifrn.asa.br" no BIND                                                           |
 |        | - Criação de um Web Content com um Conjunto de Wordpress e DB (MySQL)                                             |
-|------------------------------------------------------------------------------------------------------------------------|
 | 2      | - Configuração de Proxy Reverso (Nginx) com um segundo virtualhost para um segundo Web Content                  |
 |        | - Criação da segunda zona direta "diaren.ifrn.asa.br" no BIND                                                     |
 |        | - Criação do segundo Web Content em Wordpress com as especificações do Sprint 1                                    |
-|------------------------------------------------------------------------------------------------------------------------|
 | 3      | - Configuração de Proxy Reverso (Nginx) com mais um virtualhost para o Serviço de e-mail                           |
 |        | - Configuração de um container com Postfix e Dovecote                                                              |
 |        | - Implementação de Webmail para a transmissão de mensagens no servidor de e-mail                                   |
