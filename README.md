@@ -37,7 +37,7 @@ git clone https://github.com/richardsmoura/Projeto-ASA.git
 ```
 Para build e subir os containers:
 ```bash
-docke-compose up --build
+docker-compose up --build
 ```
 Para kill containers:
 ```bash
