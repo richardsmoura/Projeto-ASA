@@ -18,7 +18,7 @@ O projeto ASA consiste em um projeto realizado para a disciplina de Administraç
 ## Antes de Testar os Serviços:
 
 Importantante criar/modificar algumas coisas, como por exemplo o endereço IP dos arquivos DNS, logo que os nomes serão de extrema importância, caso algo acontece de errado verifique os volumes ou o caminho de diretórios que está apontando o Dockerfile do determinado container.
-Para a realização e testagem do Projeto é necessário ter o Docker e o Docker Compose instalado no seu SO. Caso não tenha, poderá acessar acessar a documentação oficial: https://docs.docker.com/engine/install/
+Para a realização e testagem do Projeto é necessário ter o Docker e o Docker Compose instalado no seu SO. Caso não tenha, poderá acessar a documentação oficial: https://docs.docker.com/engine/install/
 Após realizar as instalações e dependências, podemos prosseguir e fazer algumas verificações:
 
 1 - Para utilizar os serviços confirme que o DNS está funcionando. Caso tenha resposta prossiga para o passo 2.
